@@ -1,0 +1,13 @@
+#!/usr/bin/env php
+<?php
+
+set_time_limit(0);
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use Dotfiles\Application;
+use Symfony\Component\Filesystem\Filesystem;
+
+$app = new Application(new Filesystem());
+$app->setBinPath(dirname(__FILE__));
+$app->run();

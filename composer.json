@@ -1,0 +1,22 @@
+{
+    "require" :{
+        "symfony/console": "*",
+        "symfony/config": "^3.1",
+        "symfony/filesystem": "^3.1",
+        "twig/twig": "^1.26",
+        "symfony/twig-bridge": "^3.1",
+        "symfony/templating": "^3.1",
+        "symfony/process": "^3.1",
+        "knplabs/github-api": "^1.7",
+        "php-http/guzzle6-adapter": "^1.1",
+        "league/flysystem": "^1.0",
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "require-dev" :{
+        "phpunit/phpunit": "*",
+        "mikey179/vfsStream": "*"
+    },
+    "autoload" :{
+        "psr-4": { "Dotfiles\\": "src/" }
+    }
+}
